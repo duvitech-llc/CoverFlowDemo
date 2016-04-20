@@ -33,7 +33,7 @@ public class FancyCoverFlow extends Gallery {
 
     private float reflectionRatio = 0.4f;
 
-    private int reflectionGap = 20;
+    private int reflectionGap = 15;
 
     private boolean reflectionEnabled = false;
 
