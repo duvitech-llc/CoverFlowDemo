@@ -13,7 +13,7 @@ public class FancyCoverFlowSampleAdapter extends FancyCoverFlowAdapter {
     // Private members
     // =============================================================================
 
-    private int[] images = {R.drawable.image_1, R.drawable.image_2, R.drawable.image_3, R.drawable.image_4,};
+    private int[] images = {R.drawable.browser_icon, R.drawable.ar_icon, R.drawable.camera_icon, R.drawable.setting_icon,};
 
     // =============================================================================
     // Supertype overrides
@@ -43,7 +43,7 @@ public class FancyCoverFlowSampleAdapter extends FancyCoverFlowAdapter {
         } else {
             imageView = new ImageView(viewGroup.getContext());
             imageView.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
-            imageView.setLayoutParams(new FancyCoverFlow.LayoutParams(800, 900));
+            imageView.setLayoutParams(new FancyCoverFlow.LayoutParams(500, 450));
 
         }
 

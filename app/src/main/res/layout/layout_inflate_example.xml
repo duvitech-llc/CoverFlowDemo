@@ -10,7 +10,7 @@
         android:id="@+id/fancyCoverFlow"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        fcf:maxRotation="45"
+        fcf:maxRotation="55"
         fcf:unselectedAlpha="0.3"
         fcf:unselectedSaturation="0.0"
         fcf:unselectedScale="0.4"

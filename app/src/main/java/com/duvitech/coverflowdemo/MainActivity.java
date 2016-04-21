@@ -5,6 +5,7 @@ import android.app.ListActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.View;
@@ -27,6 +28,7 @@ public class MainActivity extends ListActivity {
 
     @Override
     public boolean onKeyUp(int keyCode, KeyEvent event) {
+        Log.d("Main", "Keycode: " + keyCode);
         switch (keyCode) {
             case KeyEvent.KEYCODE_D:
                 Toast.makeText(this,"Key D Pressed!", Toast.LENGTH_SHORT).show();
@@ -37,8 +39,8 @@ public class MainActivity extends ListActivity {
             case KeyEvent.KEYCODE_VOLUME_DOWN:
                 Toast.makeText(this,"Vol DN Pressed!", Toast.LENGTH_SHORT).show();
                 return true;
-            case KeyEvent.KEYCODE_K:
-                Toast.makeText(this,"Key K Pressed!", Toast.LENGTH_SHORT).show();
+            case KeyEvent.KEYCODE_APP_SWITCH:
+                Toast.makeText(this,"Key AppSwitch Pressed!", Toast.LENGTH_SHORT).show();
                 return true;
             default:
                 return super.onKeyUp(keyCode, event);

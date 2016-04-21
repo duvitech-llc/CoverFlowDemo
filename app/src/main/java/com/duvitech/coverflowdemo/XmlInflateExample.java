@@ -37,7 +37,6 @@ public class XmlInflateExample extends SimpleExample {
                 currentPosition++;
                 if(currentPosition>= fancyCoverFlow.getCount())  currentPosition = fancyCoverFlow.getCount() -1;
                 fancyCoverFlow.setSelection(currentPosition);
-                fancyCoverFlow.animate().setDuration(250).start();
                 return true;
             case KeyEvent.KEYCODE_VOLUME_DOWN:
                 Toast.makeText(this,"Vol DN Pressed!", Toast.LENGTH_SHORT).show();
@@ -45,7 +44,6 @@ public class XmlInflateExample extends SimpleExample {
                 currentPosition--;
                 if(currentPosition<0) currentPosition = 0;
                 fancyCoverFlow.setSelection(currentPosition);
-
                 return true;
             case KeyEvent.KEYCODE_K:
                 Toast.makeText(this,"Key K Pressed!", Toast.LENGTH_SHORT).show();
