@@ -6,11 +6,13 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Gravity;
+import android.view.KeyEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AbsListView;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends ListActivity {
 
@@ -19,7 +21,47 @@ public class MainActivity extends ListActivity {
         super.onCreate(savedInstanceState);
 
         this.setListAdapter(new ExampleAdapter());
+
+
     }
+
+    @Override
+    public boolean onKeyUp(int keyCode, KeyEvent event) {
+        switch (keyCode) {
+            case KeyEvent.KEYCODE_D:
+                Toast.makeText(this,"Key D Pressed!", Toast.LENGTH_SHORT).show();
+                return true;
+            case KeyEvent.KEYCODE_VOLUME_UP:
+                Toast.makeText(this,"Vol UP Pressed!", Toast.LENGTH_SHORT).show();
+                return true;
+            case KeyEvent.KEYCODE_VOLUME_DOWN:
+                Toast.makeText(this,"Vol DN Pressed!", Toast.LENGTH_SHORT).show();
+                return true;
+            case KeyEvent.KEYCODE_K:
+                Toast.makeText(this,"Key K Pressed!", Toast.LENGTH_SHORT).show();
+                return true;
+            default:
+                return super.onKeyUp(keyCode, event);
+        }
+    }
+
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        switch (keyCode) {
+            case KeyEvent.KEYCODE_D:
+                return true;
+            case KeyEvent.KEYCODE_VOLUME_UP:
+                return true;
+            case KeyEvent.KEYCODE_VOLUME_DOWN:
+                return true;
+            case KeyEvent.KEYCODE_K:
+                return true;
+            default:
+                return super.onKeyUp(keyCode, event);
+        }
+    }
+
 
     // =============================================================================
     // Private classes
