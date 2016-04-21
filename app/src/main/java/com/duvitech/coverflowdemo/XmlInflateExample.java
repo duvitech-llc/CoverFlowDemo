@@ -45,8 +45,8 @@ public class XmlInflateExample extends SimpleExample {
                 if(currentPosition<0) currentPosition = 0;
                 fancyCoverFlow.setSelection(currentPosition);
                 return true;
-            case KeyEvent.KEYCODE_K:
-                Toast.makeText(this,"Key K Pressed!", Toast.LENGTH_SHORT).show();
+            case KeyEvent.KEYCODE_MENU:
+                Toast.makeText(this,"Launch", Toast.LENGTH_SHORT).show();
                 return true;
             default:
                 return super.onKeyUp(keyCode, event);
@@ -63,7 +63,7 @@ public class XmlInflateExample extends SimpleExample {
                 return true;
             case KeyEvent.KEYCODE_VOLUME_DOWN:
                 return true;
-            case KeyEvent.KEYCODE_K:
+            case KeyEvent.KEYCODE_MENU:
                 return true;
             default:
                 return super.onKeyUp(keyCode, event);

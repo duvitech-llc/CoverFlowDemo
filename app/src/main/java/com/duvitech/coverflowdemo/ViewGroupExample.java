@@ -41,7 +41,7 @@ public class ViewGroupExample extends Activity {
         // Private members
         // =============================================================================
 
-        private int[] images = {R.drawable.image_1, R.drawable.image_2, R.drawable.image_3, R.drawable.image_4,};
+        private int[] images = {R.drawable.browser_icon, R.drawable.ar_icon, R.drawable.camera_icon, R.drawable.setting_icon,};
 
         // =============================================================================
         // Supertype overrides
